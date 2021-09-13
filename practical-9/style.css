@@ -58,6 +58,7 @@ a {
 
 .show-btn {
     float: right;
+    margin-right: 30px;
 }
 
 #chk {
@@ -222,3 +223,32 @@ a:hover {
 
 
 
+
+@media screen and (max-width:535px) {
+    #container{
+        display: block;
+        align-items: center;
+    }
+    #about-project {
+        width:100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .projects {
+        width: 100%;
+    }
+   
+    }
+    @media screen and (max-width:835px) {
+        .box-container{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .box{
+        width: 90%;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
