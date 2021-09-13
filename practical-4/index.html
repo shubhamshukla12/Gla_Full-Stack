@@ -6,6 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
 </head>
+<style>
+     .button {
+            border-radius: 12px;
+            background-color: aqua;
+            border: none;
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+            width: 10%;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 2px;
+            height: 2px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            color: black;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover {
+            background-color: aquamarine;
+            box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+            border-radius: 20px;
+            rotate: 360;
+
+        }
+
+        .button:hover span {
+            padding-right: 10px;
+            color: black;
+
+        }
+
+        .button a {
+            text-decoration: none;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+</style>
 <body style="background-color:lightblue">
     <h2> <font color = "burlywood" > Practical - 4: Create a website having list of all individual Practical page links. </font></h2>  
     <h1>Output</h1>
@@ -17,15 +72,15 @@
     </P>
     <h1 style="color: teal;">List of Practicals</h1>
     <ol>
-        <li>Create a Web page including HTML basic skeleton using Offline HTML Editor and online Sandbox Enviroment. <a href="/practical-1/index.html">Assignment-1</a> </li>
-        <li>Create a Web page showing basic html structure using charcter Entities and span tag. <a href="/practical-2/index.html">Assignment-2</a></li>
-        <li>Live your First Web-Page on Github. <a href="/practical-3/index.html">Assignment-3</a></li>
-        <li>Create a website having list of all practical and their individual practical Page links.<a href= "#">Assignment4</a></li>
-        <li>Create a Web-Page showing the use of Image-Map in the Web Application.<a href="/practical-5/index.html">Assignment5</a></li>
-        <li>Create a Card Layout using CSS layout properties.<a href="/practical-6/index.html">Assignment6</a></li>
-        <li>Create a Web Page Layout using div tags.<a href="/practical-7/index.html">Assignment7</a></li>
-        <li>Create a Web Page having Fixed Navigation Bar with the given content.<a href="/practical-8/index.html">Assignment8</a></li>
-        <li>Create a Responsive Web Layout with Responsive Navigation Bar.<a href="/practical-9/index.html">Assignment9</a> </li>
+        <br><li>Create a Web page including HTML basic skeleton using Offline HTML Editor and online Sandbox Enviroment.<a href="/practical-1/" class="button"><span>Click to Explore</span></a></li>
+        <br><li>Create a Web page showing basic html structure using charcter Entities and span tag.<a href="/practical-2/" class="button"><span>Click to Explore</span></a></li>
+        <br><li>Live your First Web-Page on Github.<a href="/practical-3/" class="button"><span>Click to Explore</span></a></li>
+        <br><li>Create a website having list of all practical and their individual practical Page links.<a href="#" class="button"><span>Click to Explore</span></a></li>
+        <br><li>Create a Web-Page showing the use of Image-Map in the Web Application.<a href="/practical-5/" class="button"><span>Click to Explore</span></a></li>
+        <br><li>Create a Card Layout using CSS layout properties.<a href="/practical-6/" class="button"><span>Click to Explore</span></a></li>
+        <br><li>Create a Web Page Layout using div tags.<a href="/practical-7/" class="button"><span>Click to Explore</span></a></li>
+        <br><li>Create a Web Page having Fixed Navigation Bar with the given content.<a href="/practical-8/" class="button"><span>Click to Explore</span></a></li>
+        <br><li>Create a Responsive Web Layout with Responsive Navigation Bar. <a href="/practical-9/" class="button"><span>Click to Explore</span></a> </li>
   </ol>
 </body>
 </html>
