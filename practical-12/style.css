@@ -133,7 +133,7 @@ td.pending {
     position: absolute;
     opacity: 0;
     top: 0;
-    transition: .8s;
+    transition: .5s;
 }
 
 .button:hover {
@@ -141,7 +141,7 @@ td.pending {
     box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
     border-radius: 20px;
     rotate: 360;
-    transition: .8s;
+    transition: .5s;
 
 }
 
@@ -149,7 +149,7 @@ td.pending {
     margin-right: 10px;
     margin-left: 10px;
     color: black;
-    transition: .8s;
+    transition: .5s;
 }
 
 .button a {
