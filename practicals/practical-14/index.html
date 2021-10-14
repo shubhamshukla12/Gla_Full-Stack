@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        h1{
+            color: brown;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        body{
+            background-color: rgb(225, 226, 157);
+            justify-content: center;
+        }
+        .button{
+            font-size: 50px;
+            text-decoration: none;
+            background-color: red;
+            color:white;
+            padding: 5px;
+            border-radius: 5px; 
+        }
+        .button:hover{
+            background-color: orange;
+        }
+        .link{
+            font-size: 40px;
+            margin: 50px;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <script type="text/javascript">
+        var clicks = 0;
+        function oclick(){
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+        function inclick(){
+            if(clicks > 0)
+            clicks -= 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+    </script>
+    <button class="button" type="button" onclick="oclick()">+</button>
+    <a class="link" id="clicks">0</a>
+    <button class="button" type="button" onclick="inclick()">-</button>
+    
+</body>
+</html>
